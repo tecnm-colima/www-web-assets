@@ -1,0 +1,61 @@
+
+@mixin _tab-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 100%;
+    color: white;
+    border-radius: .25rem;
+    border: 1px solid #dee2e6;
+    background-color: #6576b4;
+    font-size: 16px;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.ctrl-social {
+    &__tab-button {
+        @include _tab-button();
+        &:hover {
+            background-color: #4fa746;
+        }
+        &--active {
+            @include _tab-button();
+            background-color: #4fa746;
+        }
+    }
+    &__header {
+        font-style: italic;
+        font-size: 1.5rem;
+        color: #1b396a;
+        text-align: center;
+        padding: .25rem 1rem;
+        margin-bottom: .5rem;
+    }
+    &__title {
+        display: block;
+        background-color: #6576b4;
+        border-radius: .25rem;
+        color: white;
+        margin: .5rem 0;
+        padding: .25rem 1rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+    &__subtitle {
+        display: block;
+        background-color: #1b396a;
+        color: white;
+        padding: .25rem 1rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+    &__content-block {
+        background-color: #f8f9fa;
+        padding: .25rem 1rem;
+        text-align: justify;
+    }
+}
