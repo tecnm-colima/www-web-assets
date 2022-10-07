@@ -1,0 +1,29 @@
+.rsociales{
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    right: -5vw;
+    top: 30vh;
+    width: 10vw;
+    z-index: 1100;
+    &__content {
+        list-style: none;
+        padding: 0;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        margin: 2%;
+        background-color: white;
+        border-radius: 1vw 0 0 1vw;
+        transition: transform .3s ease-out;
+        &:hover{
+            transform: translate(-5vw, 0);
+            cursor: pointer;
+        }
+      }
+    &__item-texto{
+        margin: 0;
+        padding-left: 4%;
+    }
+  }

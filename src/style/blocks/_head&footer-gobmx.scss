@@ -1,0 +1,25 @@
+.header-gobmx {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #343a40;
+    min-height: 2em;
+    padding: .5em;
+    color: #ffffff;
+    &__link {
+        color: #ffffff;
+        &:hover {
+            color: #f8f8f8;
+        }
+    }
+}
+
+.footer-gobmx {
+    background-color: #0b231e;
+    color: #ffffff;
+    padding: .5em;
+    min-height: 2em;
+    &__fondo {
+        background-image: url();
+    }
+}

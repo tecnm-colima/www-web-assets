@@ -1,0 +1,115 @@
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,"Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.15;
+  }
+  .nav-tecnm__container{
+    display: flex;
+    background:  #1b396a;
+  }
+  .nav-tecnm__container li{
+    cursor: pointer;
+  }
+  .nav-tecnm{
+    position: relative;
+    display: block;
+    height: 50px;
+    background:  #1b396a;
+    z-index: 1;
+    & ul{
+    list-style: none; 
+    gap: .5em;
+    & li{
+      display: block;
+      height: 50px; 
+      &:hover{
+        background-color: rgb(37, 37, 37);
+        cursor: pointer;
+      }   
+    }
+    & a{
+      display: block;
+
+      height: inherit;
+      font-size: 1.2em;
+      text-align: center;
+      text-decoration: none;
+      line-height: 2.5em;
+      color: #FFF;
+    }
+   }
+  }
+  .nav-tecnm__dropdown,.nav-tecnm__dropdown-item{
+    display: block;
+    background:  #1b396a;
+  }
+  .nav-tecnm__dropdown{display: none;}
+  .nav-tecnm__dropdown-another{
+    display: none;
+    position: relative;
+    left: 100%;
+    top: -2rem;
+  }
+   
+.show{
+  display: block !important;
+}
+.drop::after {
+  content: " »";
+  font-size: 2ex;
+}
+.nav-tecnm__responsive li{
+  display: flex !important;
+}
+.nav-tecnm__responsive li p{
+  margin-left: 1em;
+}
+
+.nav-tecnm__responsive li::before{
+  content: '≡';
+  color: white;
+  font-weight: bold;
+  font-size: 5ex;
+}
+.nav-tecnm__responsive{
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+.nav-tecnm-item{
+  width: 20%;
+}
+@media only screen and (max-width: 600px) {
+  .nav-tecnm__container{
+    display: none ;
+  }
+  .nav-tecnm__responsive{
+    display: block;
+  }
+  .nav-tecnm__dropdown,.nav-tecnm__dropdown-another{
+    min-width: 100vw;
+    position: initial;
+  }
+  .nav-tecnm ul li {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .nav-tecnm__container{
+    display: none ;
+  }
+  .nav-tecnm__responsive{
+    display: block;
+  }
+  .nav-tecnm__dropdown,.nav-tecnm__dropdown-another{
+    min-width: 100vw;
+    position: initial;
+  }
+  .nav-tecnm ul li {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
