@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="/src/style/js/dropdawn.js"></script>
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/node_modules/bxslider/src/js/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/node_modules/bxslider/src/css/jquery.bxslider.css" rel="stylesheet" />
+
+    <script src="/src/js/dropdawn.js"></script>
+    <link rel="stylesheet" href="/dist/main.min.css">
 </head>
 <body>
     <nav class="header-gobmx">
@@ -159,7 +164,15 @@
       </table>
     </ul>
 
-
+<script>
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            auto: true,
+            slideWidth: screen.width,
+            /*          adaptiveHeight:true, //opcional */
+         });
+  });
+</script>
 
 
 

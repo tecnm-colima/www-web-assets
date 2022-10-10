@@ -1,4 +1,6 @@
 .header-tecnm{
+    display: flex;
+    flex-wrap: wrap;
     position: static;
     top: 10vh;
     background-color: #ffffff;
@@ -13,6 +15,8 @@
 }
 
 .footer-tecnm{
+    display: flex;
+    flex-wrap: wrap;
     background-color: #1b396a;
     color: #ffffff;
     min-height: 2em;

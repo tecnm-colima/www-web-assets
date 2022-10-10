@@ -1,4 +1,7 @@
 .header-gobmx {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -7,6 +10,7 @@
     padding: .5em;
     color: #ffffff;
     &__link {
+        display: block;
         color: #ffffff;
         &:hover {
             color: #f8f8f8;
@@ -15,6 +19,8 @@
 }
 
 .footer-gobmx {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #0b231e;
     color: #ffffff;
     padding: .5em;

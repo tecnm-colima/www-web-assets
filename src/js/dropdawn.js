@@ -1,11 +1,5 @@
 $(document).ready(function () { 
-    $('.slider').bxSlider({
-        auto: true,
-         
-        slideWidth: screen.width,
-        /*          adaptiveHeight:true, //opcional */
-     });
-    
+
     $('.nav-tecnm li').hover(function (){
       $(this).find("ul");
       $($(this).find("ul")[0]).toggleClass('show');
