@@ -1,9 +1,11 @@
 .alert, %alert {
     border: 1px solid rgb(145, 143, 143);
+    border-radius: 1.1rem;
     background-color: rgb(187, 187, 187);
     color: black;
     padding-left: 1em;
     padding-right: 1em;
+    margin: 0 .5em .5em .55em;
     &-tittle{font-weight: bold;}
     &--green {
         @extend %alert;
@@ -16,5 +18,11 @@
         color: #856404;
         border-color: #ffeeba;
         background-color: #fff3cd;
+    }
+    &--red {
+        @extend %alert;
+        color: #850404;
+        border-color: #ffbaba;
+        background-color: #ffd0cd;
     }
 }

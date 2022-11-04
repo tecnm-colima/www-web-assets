@@ -9,6 +9,11 @@
     min-height: 2em;
     padding: .5em;
     color: #ffffff;
+    & svg{
+        min-height: 1cm;
+        width: 100px;
+        height: 10px;
+    }
     &__link {
         display: block;
         color: #ffffff;

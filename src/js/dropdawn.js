@@ -1,5 +1,12 @@
 $(document).ready(function () { 
-
+  $('.nav-tecnm__container li').click(function(e){
+    $('.nav-tecnm__container li').removeClass('drop-activa')
+    e.stopPropagation()
+    if ($(window).width() <= 1100) { 
+      console.log($(this))
+      $(this).addClass('drop-activa')
+    }
+  })
     $('.nav-tecnm li').hover(function (){
       $(this).find("ul");
       $($(this).find("ul")[0]).toggleClass('show');
@@ -20,7 +27,7 @@ $(document).ready(function () {
     })
     
     $(window).resize(function(){
-        if ($(window).width() >= 700) { 
+        if ($(window).width() >= 1000) { 
             $('.nav-tecnm__container').css('display','flex')
             $('.show').removeClass('show')
         }else if ($(window).width() <= 699){

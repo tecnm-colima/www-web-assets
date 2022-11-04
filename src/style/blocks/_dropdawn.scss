@@ -20,18 +20,18 @@ html, body, ul, li {
     z-index: 1;
     & ul{
     list-style: none; 
-    gap: .5em;
+    border: solid white 1px;
+    border-radius: 2%;
     & li{
       display: block;
       height: 50px; 
-      &:hover{
-        background-color: rgb(37, 37, 37);
+      &:hover  {
+        background-color:rgba(6, 85, 175, 0.993) !important;
         cursor: pointer;
       }   
     }
     & a{
       display: block;
-
       height: inherit;
       font-size: 1.2em;
       text-align: center;
@@ -59,7 +59,8 @@ html, body, ul, li {
 .drop::after {
   content: " »";
   font-size: 2ex;
-}
+} 
+
 .nav-tecnm__responsive li{
   display: flex !important;
 }
@@ -83,7 +84,7 @@ html, body, ul, li {
 }
 @media only screen and (max-width: 600px) {
   .nav-tecnm__container{
-    display: none ;
+    display: none !important;
   }
   .nav-tecnm__responsive{
     display: block;
@@ -112,4 +113,7 @@ html, body, ul, li {
     height: auto !important;
     width: 100% !important;
   }
+}
+.drop-activa{
+  background-color: #0554ae !important;
 }

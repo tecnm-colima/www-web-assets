@@ -1,16 +1,31 @@
+.svg--white{
+    --text-color: #ffffff;
+}
+.bx-viewport{
+    max-height:369px !important; 
+}
 .header-tecnm{
     display: flex;
-    flex-wrap: wrap;
     position: static;
     top: 10vh;
     background-color: #ffffff;
     min-height: 2em;
     padding: .5em;
+    & .logo-gobmx,.logo-sep,.logo-tecnm,.logo-itcolima{
+        width: 200px;
+        min-height: 1cm;
+        max-height: 100px;
+        height: 60px;
+    }
     &__link {
         color: #1b396a;
         &:hover {
             color: #f8f8f8;
         }
+    }
+    & .logo-instituto{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -26,5 +41,16 @@
         &:hover {
             color: #f8f8f8;
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-gobmx,.logo-sep{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .logo-sep{
+        display: none;
     }
 }

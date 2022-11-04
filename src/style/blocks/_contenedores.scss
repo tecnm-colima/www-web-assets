@@ -1,1 +1,15 @@
- 
+
+%contenedor{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .contenedor{
+    @extend %contenedor;
+    &_flex{
+        @extend %contenedor;
+        display: flex;
+        flex-wrap: wrap;
+    }
+ }
