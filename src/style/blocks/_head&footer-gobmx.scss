@@ -24,13 +24,26 @@
 }
 
 .footer-gobmx {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #0b231e;
-    color: #ffffff;
-    padding: .5em;
-    min-height: 2em;
+     display: block;
+        background-color: #0b231e;
+        color: #fff;
+        min-height: 2em;
+        padding: .5em;
+        & a{
+            color: #eeeaea;
+            &:hover {
+                color: #53ae6e;
+            }
+        }
+        &-contenedor{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, calc(25rem));
+            gap: 2em;
+            margin: 1em;
+        }
+
     &__fondo {
         background-image: url();
     }
+    
 }

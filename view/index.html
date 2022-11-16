@@ -10,6 +10,10 @@
     <!-- jQuery library (served from Google) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
+    <script src="/node_modules/slick-carousel/slick/slick.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/node_modulesslick-carousel/slick/slick.css" rel="stylesheet" />
+    <!-- bxSlider Javascript file -->
     <script src="/node_modules/bxslider/src/js/jquery.bxslider.js"></script>
     <!-- bxSlider CSS file -->
     <link href="/node_modules/bxslider/src/css/jquery.bxslider.css" rel="stylesheet" />
@@ -19,6 +23,19 @@
 </head>
 
 <body>
+    <div class="slider demo">
+        <div> Slide  1 </div>
+        <div> Slide  2 </div>
+        <div> Slide  3 </div>
+      </div>
+      <script>
+        $(document).ready(function(){
+            $('.demo').slick({
+                dots: true,
+  speed: 500
+            });
+          });
+      </script>
     <nav class="header-gobmx">
         <a href=""><svg class="svg--white">
                 <use href="/dist/graphics.svg#mx-gob-2020"></use>
@@ -193,23 +210,28 @@
                 </tbody>
             </table>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id culpa laudantium
+        <p class="border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id
+            culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id culpa laudantium
+        <p class="border-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id
+            culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id culpa laudantium
+        <p class="border-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima
+            id culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id culpa laudantium
+        <p class="border-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id
+            culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id culpa laudantium
+        <p class="border-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima
+            id culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
@@ -218,11 +240,110 @@
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
     </div>
+    <div class="noticias">
+        <ul class="slider-noticia">
+                    <div>
+                        <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221007193730.JPG" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quod magnam possimus, omnis qui eius libero laudantium minus voluptate itaque.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221008145610.JPG" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, voluptate.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221018203420.JPG" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, fugiat doloremque? Minus odit repellendus ullam.</p>
+                        </div>
+                    </div>
+        </ul>
+    </div>
     <footer class="footer-tecnm">
         footer-tecnm
+        <div class="footer-tecnm-contenedor">
+
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam tempore mollitia vitae, sequi
+                incidunt eum! Est reiciendis veniam qui rem autem libero velit quos voluptatibus, dolorem expedita,
+                consequuntur facere iste doloribus deleniti impedit adipisci sint. Ratione accusamus aliquam obcaecati
+                vitae exercitationem, ad provident? Reprehenderit accusamus dolores tenetur quod quae, veritatis porro
+                nam ipsa cumque id explicabo enim quibusdam in. Deserunt reiciendis numquam nesciunt hic ducimus odio
+                perferendis voluptate esse at, iusto unde quod quasi sed, dolorum pariatur molestias suscipit fugiat
+                consequatur nam atque labore sint non? Maxime deserunt porro nihil molestiae quidem numquam odio?
+                Consequuntur asperiores sint aut sequi maxime numquam accusantium repudiandae dolorem nulla error
+                temporibus molestias labore, culpa similique sed saepe at esse animi modi iste nemo veritatis beatae!
+                Repellendus sit sint perferendis voluptas eligendi nobis, ipsum reprehenderit maiores totam dignissimos
+                veritatis quidem tempore quaerat placeat quas omnis explicabo rerum commodi in neque fuga expedita!
+                Recusandae, provident.
+            </div>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam tempore mollitia vitae, sequi
+                incidunt eum! Est reiciendis veniam qui rem autem libero velit quos voluptatibus, dolorem expedita,
+                consequuntur facere iste doloribus deleniti impedit adipisci sint. Ratione accusamus aliquam obcaecati
+                vitae exercitationem, ad provident? Reprehenderit accusamus dolores tenetur quod quae, veritatis porro
+                nam ipsa cumque id explicabo enim quibusdam in. Deserunt reiciendis numquam nesciunt hic ducimus odio
+                perferendis voluptate esse at, iusto unde quod quasi sed, dolorum pariatur molestias suscipit fugiat
+                consequatur nam atque labore sint non? Maxime deserunt porro nihil molestiae quidem numquam odio?
+                Consequuntur asperiores sint aut sequi maxime numquam accusantium repudiandae dolorem nulla error
+                temporibus molestias labore, culpa similique sed saepe at esse animi modi iste nemo veritatis beatae!
+                Repellendus sit sint perferendis voluptas eligendi nobis, ipsum reprehenderit maiores totam dignissimos
+                veritatis quidem tempore quaerat placeat quas omnis explicabo rerum commodi in neque fuga expedita!
+                Recusandae, provident.
+                <a href="">enlace</a>
+            </div>
+            <div>
+                <a href="https://siitec.colima.tecnm.mx/index.php">enlace</a>
+            </div>
+        </div>
+        <div class="footer-tecnm-cr">
+            © Copyright 2019 TecNM - Todos los Derechos Reservados
+            <p>Última actualización: 18/10/2019</p>
+        </div>
     </footer>
     <footer class="footer-gobmx">
         footer-gobmx
+        <div class="footer-gobmx-contenedor">
+            <a href=""><svg class="svg--white">
+                    <use href="/dist/graphics.svg#mx-gob-2020"></use>
+                </svg>
+            </a>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam tempore mollitia vitae, sequi
+                incidunt eum! Est reiciendis veniam qui rem autem libero velit quos voluptatibus, dolorem expedita,
+                consequuntur facere iste doloribus deleniti impedit adipisci sint. Ratione accusamus aliquam obcaecati
+                vitae exercitationem, ad provident? Reprehenderit accusamus dolores tenetur quod quae, veritatis porro
+                nam ipsa cumque id explicabo enim quibusdam in. Deserunt reiciendis numquam nesciunt hic ducimus odio
+                perferendis voluptate esse at, iusto unde quod quasi sed, dolorum pariatur molestias suscipit fugiat
+                consequatur nam atque labore sint non? Maxime deserunt porro nihil molestiae quidem numquam odio?
+                Consequuntur asperiores sint aut sequi maxime numquam accusantium repudiandae dolorem nulla error
+                temporibus molestias labore, culpa similique sed saepe at esse animi modi iste nemo veritatis beatae!
+                Repellendus sit sint perferendis voluptas eligendi nobis, ipsum reprehenderit maiores totam dignissimos
+                veritatis quidem tempore quaerat placeat quas omnis explicabo rerum commodi in neque fuga expedita!
+                Recusandae, provident.
+            </div>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam tempore mollitia vitae, sequi
+                incidunt eum! Est reiciendis veniam qui rem autem libero velit quos voluptatibus, dolorem expedita,
+                consequuntur facere iste doloribus deleniti impedit adipisci sint. Ratione accusamus aliquam obcaecati
+                vitae exercitationem, ad provident? Reprehenderit accusamus dolores tenetur quod quae, veritatis porro
+                nam ipsa cumque id explicabo enim quibusdam in. Deserunt reiciendis numquam nesciunt hic ducimus odio
+                perferendis voluptate esse at, iusto unde quod quasi sed, dolorum pariatur molestias suscipit fugiat
+                consequatur nam atque labore sint non? Maxime deserunt porro nihil molestiae quidem numquam odio?
+                Consequuntur asperiores sint aut sequi maxime numquam accusantium repudiandae dolorem nulla error
+                temporibus molestias labore, culpa similique sed saepe at esse animi modi iste nemo veritatis beatae!
+                Repellendus sit sint perferendis voluptas eligendi nobis, ipsum reprehenderit maiores totam dignissimos
+                veritatis quidem tempore quaerat placeat quas omnis explicabo rerum commodi in neque fuga expedita!
+                Recusandae, provident.
+                <a href="">enlace</a>
+            </div>
+            <div>
+                <a href="https://siitec.colima.tecnm.mx/index.php">enlace</a>
+            </div>
+        </div>
     </footer>
 </body>
 <script>
@@ -232,6 +353,9 @@
             touchEnabled: true,
             slideWidth: screen.width,
             adaptiveHeight: true,
+        });
+        $('.slider-noticia').bxSlider({
+            auto: true
         });
     });
 </script>

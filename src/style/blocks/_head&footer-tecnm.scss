@@ -30,17 +30,27 @@
 }
 
 .footer-tecnm{
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     background-color: #1b396a;
-    color: #ffffff;
+    color: #fff;
     min-height: 2em;
     padding: .5em;
-    &a {
-        color: #1b396a;
+    & a{
+        color: #eeeaea;
         &:hover {
-            color: #f8f8f8;
+            color: #75d2ff;
         }
+    }
+    &-contenedor{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, calc(25rem));
+        gap: 2em;
+        margin: 1em;
+    }
+    &-cr{
+        text-align: center;
+        padding: .5em;
+        border-top: 1px solid #ffffff17;
     }
 }
 

@@ -1,0 +1,13 @@
+.noticia{
+    background-color: #efefef;
+    color: #666;
+    &contenedor{
+        text-align: start;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, calc(25rem));
+        gap: .5em;
+    }
+    & img{
+        width: 20px;
+    }
+}
