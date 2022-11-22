@@ -10,9 +10,10 @@
     <!-- jQuery library (served from Google) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
-    <script src="/node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
     <!-- bxSlider CSS file -->
-    <link href="/node_modulesslick-carousel/slick/slick.css" rel="stylesheet" />
+    <link href="/node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+    <link href="/node_modules/slick-carousel/slick/slick.css" rel="stylesheet" />
     <!-- bxSlider Javascript file -->
     <script src="/node_modules/bxslider/src/js/jquery.bxslider.js"></script>
     <!-- bxSlider CSS file -->
@@ -23,19 +24,6 @@
 </head>
 
 <body>
-    <div class="slider demo">
-        <div> Slide  1 </div>
-        <div> Slide  2 </div>
-        <div> Slide  3 </div>
-      </div>
-      <script>
-        $(document).ready(function(){
-            $('.demo').slick({
-                dots: true,
-  speed: 500
-            });
-          });
-      </script>
     <nav class="header-gobmx">
         <a href=""><svg class="svg--white">
                 <use href="/dist/graphics.svg#mx-gob-2020"></use>
@@ -89,9 +77,8 @@
         </ul>
     </nav>
 
+
     <br>
-
-
     <div class="alert">
         <p class="alert-tittle">titulo</p>
         <p>texto </p>
@@ -109,11 +96,11 @@
         <p>texto </p>
     </div>
 
-    <ul class="slider">
+    <div id="slider" class="carousel">
         <img src="/dist/img/1.jpg" alt="">
         <img src="/dist/img/2.jpg" alt="">
         <img src="/dist/img/3.jpeg" alt="">
-    </ul>
+    </div>
     <div class='contenedor'>
         <div class="contenedor_flex">
             <table class="table-tecnm">
@@ -240,59 +227,99 @@
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
     </div>
+    <style>
+
+    </style>
     <div class="noticias">
-        <ul class="slider-noticia">
-                    <div>
-                        <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221007193730.JPG" alt="">
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quod magnam possimus, omnis qui eius libero laudantium minus voluptate itaque.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221008145610.JPG" alt="">
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, voluptate.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221018203420.JPG" alt="">
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, fugiat doloremque? Minus odit repellendus ullam.</p>
-                        </div>
-                    </div>
-        </ul>
+        <div>
+            <div class="card">
+                <div class="card-cabecera">
+                    <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221007193730.JPG" alt="">
+                </div>
+                <div class="card-cuerpo">
+                    <p class="card-cuerpo-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eum
+                        vero similique repellendus eveniet temporibus repellat voluptate quas ab, omnis quaerat,
+                        molestias dolorem fugit voluptates?</p>
+                    <a href="">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-cabecera">
+                    <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221007193730.JPG" alt="">
+                </div>
+                <div class="card-cuerpo">
+                    <p class="card-cuerpo-txt">Lorem ipsum dolor sit amet.</p>
+                    <a href="">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-cabecera">
+                    <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221007193730.JPG" alt="">
+                </div>
+                <div class="card-cuerpo">
+                    <p class="card-cuerpo-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nulla!.
+                    </p>
+                    <a href="">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-cabecera">
+                    <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221007193730.JPG" alt="">
+                </div>
+                <div class="card-cuerpo">
+                    <p class="card-cuerpo-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quis,
+                        a at distinctio vero minima maxime eum. Ratione, exercitationem minus.</p>
+                    <a href="">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-cabecera">
+                    <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221007193730.JPG" alt="">
+                </div>
+                <div class="card-cuerpo">
+                    <p class="card-cuerpo-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi atque
+                        laudantium sapiente dolores blanditiis quam, dolorum alias rerum sed, labore at, assumenda nam?
+                        Esse, unde.</p>
+                    <a href="">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-cabecera">
+                    <img src="https://www.colima.tecnm.mx/img/noticias/Principal20221007193730.JPG" alt="">
+                </div>
+                <div class="card-cuerpo">
+                    <p class="card-cuerpo-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat delectus
+                        doloremque dignissimos nihil perferendis natus vitae expedita nesciunt reiciendis ipsam! Aliquid
+                        doloribus est eligendi in voluptatibus rem fugiat laudantium laboriosam accusantium ab eveniet
+                        officiis cupiditate vitae, ipsum, architecto molestias quis voluptates dolor maiores et
+                        deleniti? Eius ea maiores nobis quas.</p>
+                    <a href="">Leer mas</a>
+                </div>
+            </div>
+        </div>
+
     </div>
     <footer class="footer-tecnm">
         footer-tecnm
         <div class="footer-tecnm-contenedor">
-
             <div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam tempore mollitia vitae, sequi
-                incidunt eum! Est reiciendis veniam qui rem autem libero velit quos voluptatibus, dolorem expedita,
-                consequuntur facere iste doloribus deleniti impedit adipisci sint. Ratione accusamus aliquam obcaecati
-                vitae exercitationem, ad provident? Reprehenderit accusamus dolores tenetur quod quae, veritatis porro
-                nam ipsa cumque id explicabo enim quibusdam in. Deserunt reiciendis numquam nesciunt hic ducimus odio
-                perferendis voluptate esse at, iusto unde quod quasi sed, dolorum pariatur molestias suscipit fugiat
-                consequatur nam atque labore sint non? Maxime deserunt porro nihil molestiae quidem numquam odio?
-                Consequuntur asperiores sint aut sequi maxime numquam accusantium repudiandae dolorem nulla error
-                temporibus molestias labore, culpa similique sed saepe at esse animi modi iste nemo veritatis beatae!
-                Repellendus sit sint perferendis voluptas eligendi nobis, ipsum reprehenderit maiores totam dignissimos
-                veritatis quidem tempore quaerat placeat quas omnis explicabo rerum commodi in neque fuga expedita!
-                Recusandae, provident.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quibusdam nam? Quos quis tempora
+                excepturi voluptatum fuga rem explicabo cupiditate molestiae doloribus aperiam, expedita facere.
             </div>
             <div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam tempore mollitia vitae, sequi
-                incidunt eum! Est reiciendis veniam qui rem autem libero velit quos voluptatibus, dolorem expedita,
-                consequuntur facere iste doloribus deleniti impedit adipisci sint. Ratione accusamus aliquam obcaecati
-                vitae exercitationem, ad provident? Reprehenderit accusamus dolores tenetur quod quae, veritatis porro
-                nam ipsa cumque id explicabo enim quibusdam in. Deserunt reiciendis numquam nesciunt hic ducimus odio
-                perferendis voluptate esse at, iusto unde quod quasi sed, dolorum pariatur molestias suscipit fugiat
-                consequatur nam atque labore sint non? Maxime deserunt porro nihil molestiae quidem numquam odio?
-                Consequuntur asperiores sint aut sequi maxime numquam accusantium repudiandae dolorem nulla error
-                temporibus molestias labore, culpa similique sed saepe at esse animi modi iste nemo veritatis beatae!
-                Repellendus sit sint perferendis voluptas eligendi nobis, ipsum reprehenderit maiores totam dignissimos
-                veritatis quidem tempore quaerat placeat quas omnis explicabo rerum commodi in neque fuga expedita!
-                Recusandae, provident.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cumque dolorem voluptatem rerum
+                aspernatur omnis, reiciendis magnam itaque labore autem expedita a blanditiis quod facere numquam ipsum
+                doloremque magni illo.
                 <a href="">enlace</a>
             </div>
             <div>
@@ -312,32 +339,13 @@
                 </svg>
             </a>
             <div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam tempore mollitia vitae, sequi
-                incidunt eum! Est reiciendis veniam qui rem autem libero velit quos voluptatibus, dolorem expedita,
-                consequuntur facere iste doloribus deleniti impedit adipisci sint. Ratione accusamus aliquam obcaecati
-                vitae exercitationem, ad provident? Reprehenderit accusamus dolores tenetur quod quae, veritatis porro
-                nam ipsa cumque id explicabo enim quibusdam in. Deserunt reiciendis numquam nesciunt hic ducimus odio
-                perferendis voluptate esse at, iusto unde quod quasi sed, dolorum pariatur molestias suscipit fugiat
-                consequatur nam atque labore sint non? Maxime deserunt porro nihil molestiae quidem numquam odio?
-                Consequuntur asperiores sint aut sequi maxime numquam accusantium repudiandae dolorem nulla error
-                temporibus molestias labore, culpa similique sed saepe at esse animi modi iste nemo veritatis beatae!
-                Repellendus sit sint perferendis voluptas eligendi nobis, ipsum reprehenderit maiores totam dignissimos
-                veritatis quidem tempore quaerat placeat quas omnis explicabo rerum commodi in neque fuga expedita!
-                Recusandae, provident.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quibusdam nam? Quos quis tempora
+                excepturi voluptatum fuga rem explicabo cupiditate molestiae doloribus aperiam, expedita facere.
             </div>
             <div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam tempore mollitia vitae, sequi
-                incidunt eum! Est reiciendis veniam qui rem autem libero velit quos voluptatibus, dolorem expedita,
-                consequuntur facere iste doloribus deleniti impedit adipisci sint. Ratione accusamus aliquam obcaecati
-                vitae exercitationem, ad provident? Reprehenderit accusamus dolores tenetur quod quae, veritatis porro
-                nam ipsa cumque id explicabo enim quibusdam in. Deserunt reiciendis numquam nesciunt hic ducimus odio
-                perferendis voluptate esse at, iusto unde quod quasi sed, dolorum pariatur molestias suscipit fugiat
-                consequatur nam atque labore sint non? Maxime deserunt porro nihil molestiae quidem numquam odio?
-                Consequuntur asperiores sint aut sequi maxime numquam accusantium repudiandae dolorem nulla error
-                temporibus molestias labore, culpa similique sed saepe at esse animi modi iste nemo veritatis beatae!
-                Repellendus sit sint perferendis voluptas eligendi nobis, ipsum reprehenderit maiores totam dignissimos
-                veritatis quidem tempore quaerat placeat quas omnis explicabo rerum commodi in neque fuga expedita!
-                Recusandae, provident.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cumque dolorem voluptatem rerum
+                aspernatur omnis, reiciendis magnam itaque labore autem expedita a blanditiis quod facere numquam ipsum
+                doloremque magni illo.
                 <a href="">enlace</a>
             </div>
             <div>
@@ -348,14 +356,72 @@
 </body>
 <script>
     $(document).ready(function () {
-        $('.slider').bxSlider({
-            auto: true,
-            touchEnabled: true,
-            slideWidth: screen.width,
-            adaptiveHeight: true,
+
+        $('#slider').slick({
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade: true,
+            cssEase: 'linear',
+            arrows: false
         });
-        $('.slider-noticia').bxSlider({
-            auto: true
+
+        $('.noticias').slick({
+            dots: true,
+            focusOnSelect: true,
+            centerMode: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            respondTo: 'min',
+
+            responsive: [
+                
+                {
+                    breakpoint: 1900,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1700,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     });
 </script>

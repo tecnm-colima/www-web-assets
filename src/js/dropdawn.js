@@ -3,7 +3,6 @@ $(document).ready(function () {
     $('.nav-tecnm__container li').removeClass('drop-activa')
     e.stopPropagation()
     if ($(window).width() <= 1100) { 
-      console.log($(this))
       $(this).addClass('drop-activa')
     }
   })
@@ -20,7 +19,6 @@ $(document).ready(function () {
       e.stopPropagation();
     })
     $('.nav-tecnm__responsive li').click(function(e){
-        let padre_resposivo = $(this).parent();
         let padre_content = $(this).parent().siblings()[0];
         $(padre_content).is(":visible") ? $(padre_content).hide() :$(padre_content).show()
         e.stopPropagation();
