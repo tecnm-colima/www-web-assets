@@ -11,11 +11,14 @@
     background-color: #ffffff;
     min-height: 2em;
     padding: .5em;
-    & .logo-gobmx,.logo-sep,.logo-tecnm,.logo-itcolima{
+    & .logo-gobmx, .logo-sep, .logo-tecnm, .logo-itcolima{
         width: 200px;
         min-height: 1cm;
         max-height: 100px;
         height: 60px;
+        &:hover{
+            opacity: 0.5;
+        }
     }
     &__link {
         color: #1b396a;
@@ -36,7 +39,7 @@
     min-height: 2em;
     padding: .5em;
     & a{
-        color: #eeeaea;
+        color: #beeaff;
         &:hover {
             color: #75d2ff;
         }
