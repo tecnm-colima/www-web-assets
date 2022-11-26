@@ -84,10 +84,7 @@ html, body, ul, li {
 }
 @media only screen and (max-width: 600px) {
   .nav-tecnm__container{
-    display: none !important;
-  }
-  .nav-tecnm__responsive{
-    display: block;
+    display: none;
   }
   .nav-tecnm__dropdown,.nav-tecnm__dropdown-another{
     min-width: 100vw;
