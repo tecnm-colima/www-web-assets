@@ -181,18 +181,23 @@ $borde: 1px solid #e1e1e1;
  }
  .border{
     border: $borde;
+    padding: .5rem;
  }
  .border-top{
     border-top: $borde;
+    padding: .5rem;
  }
  .border-bottom{
     border-bottom: $borde;
+    padding: .5rem;
  }
  .border-left{
     border-left: $borde;
+    padding: .5rem;
  }
  .border-right{
     border-right: $borde;
+    padding: .5rem;
  }
  
  

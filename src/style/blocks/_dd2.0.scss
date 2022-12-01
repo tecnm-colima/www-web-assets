@@ -1,0 +1,95 @@
+$bg-nav : #1b396a;
+$bg-nav--hover : #0554ae;
+
+%init {
+    list-style: none;
+    background-color: $bg-nav;
+    color: white;
+ 
+
+}
+
+.dropdown {
+    &--content {
+        @extend %init;
+        display: flex;
+        background-color: $bg-nav;
+        color: white;
+
+    }
+
+    &-item {
+        @extend %init;
+        padding: 1rem;
+        width: 5rem;
+        &:hover {
+            background-color: $bg-nav--hover;
+            cursor: pointer;
+
+            &>.dropdown--hide:nth-child(1) {
+                display: block;
+                position: absolute;
+                z-index: 100;
+                -moz-transform: translate(6em,-1rem);
+            }
+        }
+    }
+
+    &--hide {
+        @extend %init;
+        display: none;
+        border: solid 1px rgba(255, 255, 255, 0.452);
+    }
+}
+.drop::after {
+    content: \25b4;
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 1.5ex;
+    margin-left: 1em;
+    margin-top: .125em;
+  } 
+  .drop:hover:after {
+    transform: rotate(0deg);
+  } 
+
+  .dropdown--responsive{
+    margin-left: 1em;
+  }
+  .dropdown--responsive::before{
+    content: '≡';
+    color: white;
+    font-weight: bold;
+    font-size: 5ex;
+  }
+/* .dd * {
+    list-style: none;
+    background-color: $bg-nav;
+    color: white;
+}
+
+.dd {
+    background-color: $bg-nav;
+    display: flex;
+    & li{
+        display: block;
+        width: 5em;
+        position: relative;
+        cursor: pointer;
+        padding: .5rem;
+        &:hover{
+           background-color: #0554ae; 
+        }
+    }
+}
+.dd li>ul {
+    display: none;
+    border: solid 1px white;
+}
+.dd li:hover>ul {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 2.15em;
+    left: 2em;
+} */

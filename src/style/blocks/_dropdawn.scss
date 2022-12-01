@@ -57,8 +57,14 @@ html, body, ul, li {
   display: block !important;
 }
 .drop::after {
-  content: " »";
-  font-size: 2ex;
+  content: "►";
+  position: absolute;
+  transform: rotate(90deg);
+  font-size: 1ex;
+  margin-left: 1em;
+} 
+.drop:hover:after {
+  transform: rotate(0deg);
 } 
 
 .nav-tecnm__responsive li{

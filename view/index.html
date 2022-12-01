@@ -24,6 +24,52 @@
 </head>
 
 <body>
+
+    <ul class="dropdown--content">
+        <li class="dropdown-item drop">op1
+            <ul class="dropdown--hide">
+                <li class="dropdown-item">op1.1</li>
+                <li class="dropdown-item">op1.2</li>
+                <li class="dropdown-item">op1.3</li>
+            </ul>
+        </li>
+        <li class="dropdown-item drop">op2
+            <ul class="dropdown--hide">
+                <li class="dropdown-item">op2.1</li>
+                <li class="dropdown-item">op2.2</li>
+                <li class="dropdown-item">op2.3
+                <li class="dropdown-item drop">op2.3
+                    <ul class="dropdown--hide">
+                        <li class="dropdown-item">op2.3.1</li>
+                        <li class="dropdown-item">op2.3.2</li>
+                        <li class="dropdown-item drop">op2.3.3
+                            <ul class="dropdown--hide">
+                                <li class="dropdown-item">op2.3.3.1</li>
+                                <li class="dropdown-item drop">op2.3.3.2
+                                    <ul class="dropdown--hide">
+                                        <li class="dropdown-item">op2.3.3.2.1</li>
+                                        <li class="dropdown-item">op2.3.3.2.2</li>
+                                        <li class="dropdown-item">op2.3.3.2.3
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item drop">op2.3.3.3
+                                    <ul class="dropdown--hide">
+                                        <li class="dropdown-item">op2.3.3.3.1</li>
+                                        <li class="dropdown-item">op2.3.3.3.2</li>
+                                        <li class="dropdown-item">op2.3.3.3.3</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+
     <nav class="header-gobmx">
         <a href=""><svg class="svg--white">
                 <use href="/dist/graphics.svg#mx-gob-2020"></use>
@@ -76,8 +122,20 @@
             </li>
         </ul>
     </nav>
+    <div class="contenedor">
 
-
+        <h1 class="titulo-articulo"> Esto es un titulo</h1>
+        <h3 class="subtitulo-articulo"> Esto es un subtitulo</h3>
+        <p class="parrafo"> <a href="#">Esto es un parrafo</a>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, deleniti!
+        </p>
+        <p class="parrafo--italic"> <a href="#">Esto es un parrafo --italic</a>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, deleniti!
+        </p>
+        <p class="parrafo--bold"> <a href="#">Esto es un parrafo --bold</a>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, deleniti!
+        </p>
+    </div>
     <br>
     <div class="alert">
         <p class="alert-tittle">titulo</p>
@@ -97,9 +155,9 @@
     </div>
 
     <div id="slider" class="carousel">
-        <img src="/dist/img/1.jpg" alt="">
-        <img src="/dist/img/2.jpg" alt="">
-        <img src="/dist/img/3.jpeg" alt="">
+        <img src="/dist/1.jpg" alt="">
+        <img src="/dist/2.jpg" alt="">
+        <img src="/dist/3.jpg" alt="">
     </div>
     <div class='contenedor'>
         <div class="contenedor_flex">
@@ -197,35 +255,37 @@
                 </tbody>
             </table>
         </div>
-        <p class="border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id
+        <p class="border parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima
+            id
             culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p class="border-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id
+        <p class="border-top parrafo-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed,
+            fuga minima id
             culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p class="border-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima
+        <p class="border-bottom parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga
+            minima
             id culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p class="border-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id
+        <p class="border-left parrafo-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed,
+            fuga minima id
             culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p class="border-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima
+        <p class="border-right parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga
+            minima
             id culpa laudantium
             sit,
             commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed, fuga minima id culpa laudantium
-            sit,
-            commodi amet nesciunt dicta aperiam architecto qui? Atque mollitia commodi natus quasi dolores veritatis!
-        </p>
+
     </div>
     <style>
 
@@ -379,7 +439,7 @@
             respondTo: 'min',
 
             responsive: [
-                
+
                 {
                     breakpoint: 1900,
                     settings: {

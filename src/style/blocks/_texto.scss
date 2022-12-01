@@ -1,0 +1,40 @@
+%basic{
+    color: #848484;
+    padding-top: 5px;
+}
+%links{
+    a{
+        text-decoration: none;
+        color: #007bff;
+        &:hover {
+            color: #0093cc;
+            text-decoration: none;
+            opacity: .7;
+        }
+    }
+}
+.titulo-articulo{
+    @extend %basic;
+    font-size: 30px;
+    font-weight: 640;
+}
+.subtitulo-articulo{
+    @extend %basic;
+    color: #1B396A;
+    font-size: 24px;
+    font-weight: 640;
+}
+.parrafo{
+    @extend %basic;
+    @extend %links;
+    &--italic{
+        @extend %basic; 
+        @extend %links;
+        font-style: italic;
+    }
+    &--bold{
+        @extend %basic; 
+        @extend %links;
+        font-weight: bold;
+    }
+}
