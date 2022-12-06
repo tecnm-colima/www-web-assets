@@ -1,4 +1,10 @@
-%basic{
+$color-seundario: #2a56a0;
+%basic-titulo{
+    color: #848484;
+    padding-top: 5px;
+    font-weight: 640;
+}
+%basic-parrafo{
     color: #848484;
     padding-top: 5px;
 }
@@ -13,27 +19,68 @@
         }
     }
 }
-.titulo-articulo{
-    @extend %basic;
+.titulo{
+    @extend %basic-titulo;
     font-size: 30px;
-    font-weight: 640;
+    &--secundario{
+        color: $color-seundario;
+        font-size: 30px;
+    }
+    &--italic{
+        @extend %basic-titulo;
+        font-size: 30px;
+        font-style: italic;
+    }
 }
-.subtitulo-articulo{
-    @extend %basic;
-    color: #1B396A;
-    font-size: 24px;
-    font-weight: 640;
+.titulo2{
+    @extend %basic-titulo;
+    font-size: 26px;
+    &--secundario{
+        color: $color-seundario;
+        font-size: 26px;
+    }
+    &--italic{
+        @extend %basic-titulo;
+        font-size: 26px;
+        font-style: italic;
+    }
+}
+.titulo3{
+    @extend %basic-titulo;
+    font-size: 22px;
+    &--secundario{
+        color: $color-seundario;
+        font-size: 22px;
+    }
+    &--italic{
+        @extend %basic-titulo;
+        font-size: 22px;
+        font-style: italic;
+    }
+}
+.titulo4{
+    @extend %basic-titulo;
+    font-size: 20px;
+    &--secundario{
+        color: $color-seundario;
+        font-size: 20px;
+    }
+    &--italic{
+        @extend %basic-titulo;
+        font-size: 20px;
+        font-style: italic;
+    }
 }
 .parrafo{
-    @extend %basic;
+    @extend %basic-parrafo;
     @extend %links;
     &--italic{
-        @extend %basic; 
+        @extend %basic-parrafo; 
         @extend %links;
         font-style: italic;
     }
     &--bold{
-        @extend %basic; 
+        @extend %basic-parrafo; 
         @extend %links;
         font-weight: bold;
     }
