@@ -1,5 +1,5 @@
 $(document).ready(() =>{
-    $('.dropdown--responsive').hide();
+    $('.dropdown--responsive').addClass('flex');
     responsivo()
     $(window).resize(() =>{
         responsivo()
